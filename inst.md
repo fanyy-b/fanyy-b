@@ -1,10 +1,11 @@
-# ssh keys
+# first inst
 
 ```
 cd && \
     apt update && \
-    apt purge -y nano && \
-    apt install -y vim mc htop git sudo curl wget gnupg apt-transport-https && \
+    apt full-upgrade -y && \
+    apt install -y mc htop git sudo curl wget tmux gnupg apt-transport-https && \
     mkdir -p .ssh && \
-    curl https://github.com/ondrejsika.keys >> ~/.ssh/authorized_keys
+    curl https://github.com/fanyy-b.keys >> ~/.ssh/authorized_keys
 ```
+
